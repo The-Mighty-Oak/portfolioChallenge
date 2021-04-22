@@ -1,0 +1,204 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS\bootstrap.min.css">
+    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="works">
+
+    <div class="portfolio-wrapper">
+
+        <div class="cursor"></div>
+        <div class="top-wrapper-portfolio">
+
+            <header>
+
+
+
+                <nav class="navbar navbar-expand-xl">
+
+                    <a class="navbar-brand links" href="index.html"><img src="Images\logo-dark.png" alt="mighty oak logo" id="nav-logo"></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wests">
+          			<span class="navbar-toggler-icon"> <img src="Images\hamburger-dark.png" alt="" id="hamburger" onclick="hamBurgerMenu()"> <img src="Images\close-dark.png" alt="" id="hamburger-Close" onclick="hamBurgerMenuClose()"></span>
+          	</button>
+                    <div class="collapse navbar-collapse justify-content-end" id="wests">
+
+                        <ul class="nav works-nav">
+                            <li id="try" class="nav-item inactive">
+                                <a id="sec1" class="nav-link links" href="index.html"><span>Home</span></a>
+
+                            </li>
+
+
+                            <li id="try" class="nav-item active">
+                                <a id="sec1" class="nav-link links" href="#"><span>Works</span></a>
+
+                            </li>
+
+
+                            <li id="try" class="nav-item inactive">
+                                <a id="sec1" class="nav-link links" href="about.html"><span>About</span></a>
+
+                            </li>
+
+
+
+                            <li id="try" class="nav-item inactive">
+                                <a id="sec2" class="nav-link links" href="contact.html"><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+
+
+
+        <div class="portfolio-container">
+
+
+
+
+
+
+            <div class="inner-portfolio-wrapper">
+
+
+
+                <div class="work-page-description">
+                    <p><span>Follow the links below</span> to peruse some of my <span>previous works</span>. Please note that this selection includes both <span>client-commissioned and personal projects</span> (either way, it will be stated on the project
+                        page so you're aware). <span>My Resume is also available for perusal and/or download.</span> <br> <br> <span class="thanks">Thank You!</span></p>
+
+                </div>
+
+
+                <div class="side">
+
+
+
+
+
+                    <div class="portfolio-items">
+
+                        <div class="portfolio-items-1">
+
+                            <p>01.</p>
+                            <h1><a class="links" href="web.html">Web Design</a></h1>
+
+                        </div>
+
+                        <div class="portfolio-items-1">
+
+                            <p>02.</p>
+                            <h1><a class="links" href="uidesign.html">UI/UX Design</a></h1>
+
+                        </div>
+
+
+                        <div class="portfolio-items-1">
+
+                            <p>03.</p>
+                            <h1><a class="links" href="resume.html">Resume</a></h1>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        <ul class="socials">
+            <li class="social-accounts">
+                <a class="accounts links" href="#">
+                    <!-- <div> -->
+                    <img src="Images\behance.png" alt="">
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <span class="links-to-socials">behance/The-Mighty-Oak</span>
+                    <!-- </div> -->
+                </a>
+
+            </li>
+
+            <li class="social-accountsve">
+                <a class="accounts links" href="#">
+                    <img src="Images\instagram.png" alt="">
+                    <span class="links-to-socials">instagram/@_the_mighty_oak</span></a>
+
+            </li>
+
+            <li class="social-accountsve">
+                <a class="accounts links" href="#">
+                    <img src="Images\linked-in.png" alt="">
+                    <span class="links-to-socials">linked-in/akinboladeolurunke</span></a>
+
+            </li>
+
+            <li class="social-accountsve">
+                <a class="accounts links" href="#">
+                    <img src="Images\github.png" alt="">
+                    <span class="links-to-socials">github/themightyOak</span></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script src="JS\three.js"></script>
+    <script type="module" src="JS\GLTFLoader.js"></script>
+    <script type="module" src="JS\dat.gui.module.js"></script>
+    <script type="module" src="JS\script.js"></script>
+    <!-- <script type="module" src="JS\OrbitControls.js"></script> -->
+    <script src="JS\jquery-3.5.1.min.js"></script>
+    <script src="JS\bootstrap.bundle.min.js"></script>
+    <script src="JS\cursor.js"></script>
+    <script src="JS\gsap.min.js"></script>
+    <script src="JS\ScrollTrigger.min.js"></script>
+    <script src="JS\scroll.js"></script>
+
+
+    <script>
+        let tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.inner-portfolio-wrapper',
+                //start: "center bottom",
+            }
+        });
+
+        tl1.from(".work-page-description", {
+                //y: 300,
+                //scale: 0.9,
+                opacity: 0,
+                duration: 2
+            })
+            .from(".portfolio-items", {
+                //y: 300,
+                opacity: 0,
+                duration: 2.5
+            })
+    </script>
+
+
+</body>
+
+</html>
